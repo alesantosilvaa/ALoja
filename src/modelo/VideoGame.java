@@ -1,11 +1,20 @@
 package modelo;
 
 public class VideoGame {
+	
 	private String titulo;
 	private double precoDeVenda;
 	private int quantidadeEmEstoque;
-	private int quantidadeMinimaParaSeComprar;
+	private int quantidadeMinimaEstoque;
 	private Importadora importadora;
+	
+	public VideoGame(String titulo, double precoDeVenda, int quantidadeEmEstoque, int quantidadeMinimoEstoque,Importadora importadora) {
+		this.titulo = titulo;
+		this.precoDeVenda = precoDeVenda;
+		this.quantidadeEmEstoque = quantidadeEmEstoque;
+		this.importadora = importadora;
+		
+	}
 	
 	
 	public String getTitulo() {
@@ -32,12 +41,12 @@ public class VideoGame {
 		this.quantidadeEmEstoque = quantidadeEmEstoque;
 	}
 	
-	public int getQuantidadeMinimaParaSeComprar() {
-		return quantidadeMinimaParaSeComprar;
+	public int getQuantidadeMinimaEstoque() {
+		return quantidadeMinimaEstoque;
 	}
 	
-	public void setQuantidadeMinimaParaSeComprar(int quantidadeMinimaParaSeComprar) {
-		this.quantidadeMinimaParaSeComprar = quantidadeMinimaParaSeComprar;
+	public void setQuantidadeMinimaEstoque(int quantidadeMinimaEstoque) {
+		this.quantidadeMinimaEstoque = quantidadeMinimaEstoque;
 	}
 	
 	public Importadora getImportadora() {

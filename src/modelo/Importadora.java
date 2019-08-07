@@ -1,9 +1,18 @@
 package modelo;
 
 public class Importadora {
+	
+	private String nomeImportadora;
 	private String nomeDoResponsavel;
 	private String telefone;
 	private String cgc;
+	
+	public Importadora(String nomeImportadora, String nomeDoResponsavel, String telefone, String cgc) {
+		this.nomeImportadora = nomeImportadora;
+		this.nomeDoResponsavel = nomeDoResponsavel;
+		this.telefone = telefone;
+		this.cgc = cgc;
+	}
 	
 	public String getNomeDoResponsavel() {
 		return nomeDoResponsavel;
@@ -29,4 +38,13 @@ public class Importadora {
 		this.cgc = cgc;
 	}
 
+	public String getNomeImportadora() {
+		return nomeImportadora;
+	}
+
+	public void setNomeImportadora(String nomeImportadora) {
+		this.nomeImportadora = nomeImportadora;
+	}
+ 
+	
 }
