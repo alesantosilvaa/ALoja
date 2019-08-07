@@ -17,5 +17,6 @@ public class Principal {
 	 estoque.cadastrarvideoGame(videoGame1);
 	 estoque.cadastrarvideoGame(videoGame2);
 	 estoque.listarGamesQueEstaoNoMinimo();
+	 estoque.pesquisarGamePeloNome("GTA");
 }
 }
